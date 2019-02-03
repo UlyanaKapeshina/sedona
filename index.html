@@ -20,7 +20,7 @@
     <main class="container">
 
       <div class="welcome">
-        <h1 class="visually-hidden">Седона</h1>
+        <h1 class="visually-hidden">Штат Седона</h1>
         <p><img src="img/welcome.png" width="459" height="353" alt="Welcome"></p>
       </div>
       
@@ -31,7 +31,7 @@
             <p>Рассмотрим 5 причин, по которым cедона круче, чем Гранд-Каньон!</p>
         </div>      
 
-        <h2 class="visually-hidden">5 причин</h2>
+        <h2 class="visually-hidden">5 причин посетить Седону</h2>
         <ul class="features-list">
 
           <li class="features-item">
@@ -93,8 +93,39 @@
       <section class="appointment">
         <strong>Заинтересовались?</strong>
         <p class="appointment-info">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="button" href="#">Поиск гостиницы в Седоне</a>
-        <!-- Здесь будет форма -->
+        <a class="open-form button" href="#">Поиск гостиницы в Седоне</a>
+        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="get">
+          <p class="appointment-item">
+           <label for="date-arrival">Дата заезда</label>
+           <input type="text" name="date-arrival" id="date-arrival" value="" placeholder="24 апреля 2017">
+          </p>
+          <p class="appointment-item">        
+           <label for="date-departure">Дата выезда</label>
+           <input type="text" name="date-departure" id="date-departure" value="" placeholder="4 июля 2017" >
+          </p>
+          
+          <p class="appointment-item"> 
+            <label for="adults">Взрослые</label>
+            <button type="button" name="minus"></button>               
+            <input type="text" id="adults" name="adults" value="" placeholder="0">
+            <button type="button"name="plus"></button> 
+          </p>   
+          <p class="appointment-item"> 
+           <label for="children">Дети</label>
+           <button type="button" name="minus"></button>               
+           <input type="text" id="children" name="children" value="" placeholder="0">
+           <button type="button"name="plus"></button> 
+          </p>
+          <a href="#" class="search button">Найти</button>                    
+        </form>        
+      </section>
+      <section class="modal modal-map">
+        <h2 class="visually-hidden">Седона на карте</h2>
+        <p>
+          <img src="img/map.png" width="1200" height="593" alt="Седона на карте">
+        </p>
+        
+
       </section>
       
     </main>
@@ -115,7 +146,7 @@
 
       <div class="footer-copyright">
         <p>Website by</p>
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="logo-htmlacademy.svg" width="115" height="41" alt="HTML academy"></a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML academy"></a>
       </div>
 
     </footer>

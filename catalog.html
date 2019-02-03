@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="main-header">
-      <a class="main-header-logo" ><img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Седона"></a>
+      <a href="index.html" class="main-header-logo" ><img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Седона"></a>
       <nav class="main-navigation">
        <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
@@ -21,9 +21,64 @@
 
       <h1 class="visually-hidden">Гостиницы Седоны</h1>
 
-      <section class="hotels-filter">
+      <section class="filters">
         <h2 class="visually-hidden">Фильтр гостиниц</h2> 
-        <!-- Здесь будет фильтр -->
+        <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul>
+             <li class="filter-option">
+               <label>
+              <input type="checkbox" name="swimmingpool" checked>Бассейн</label>
+             </li>
+             <li class="filter-option">
+              <label>
+              <input type="checkbox" name="parking">Парковка</label>
+             </li>
+             <li class="filter-option">
+              <label>
+             <input type="checkbox" name="Wi-Fi">Wi-Fi</label>
+             </li>
+           </ul>
+          </fieldset>
+          <fieldset>
+              <legend>Тип жилья:</legend>
+              <ul class="type-of-housing-list">
+                <li>
+                 <label>
+                 <input type="checkbox" name="hotel" checked>Гостиница</label>
+                </li>
+                <li>
+                  <label>
+                  <input type="checkbox" name="motel" checked>Мотель</label>
+                </li>
+                <li>
+                  <label>
+                  <input type="checkbox" name="apartments" checked>Апартаменты</label>
+                </li>
+              </ul>                 
+            </fieldset>
+            <div class="range-filter">
+              <p>Стоимость в сутки (Р):</p>
+              <div class="price-controls">
+                <div class="min-price">
+                  <label>От<input type="text" value="0"></label> 
+                </div>
+                <div class="max-price">
+                  <label>До<input type="text" value="3000"></label>
+                </div>
+              </div>
+              <div class="range-controls">
+                <div class="scale"><div class="bar"></div></div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              
+              
+              <button type="submit" >Показать</button>
+            </div>
+        </form>
+        
       </section>
 
       <section class="catalog">
@@ -111,7 +166,7 @@
   
         <div class="footer-copyright">
           <p>Website by</p>
-          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="logo-htmlacademy.svg" width="115" height="41" alt="HTML academy"></a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML academy"></a>
         </div>
   
       </footer>
