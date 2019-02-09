@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #000000;
+    text-transform: uppercase;
+
+    background-color: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    font: inherit;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    border: none;
+
+      
+} 
+
+.blue-button {
+    background-color: #81b3d2;   
+}
+.blue-button:hover {
+    background-color: #699ec0;
+} 
+.blue-button:active {
+    background-color: #5496bd;
+    color: #88b6d1;
+}
+.broun-button {
+    background-color: #766357;  
+}
+.broun-button:hover {
+    background-color: #604e43;
+} 
+.broun-button:active {
+    background-color: #503e33;
+    color: #857871;
+}
+
+.main-navigation {
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+    font-weight: 700;
+    
+    background-color: #ffffff;
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+a.link {
+    color: #000000;
+}
+
+a.link:hover {
+    color: #81b3d2;
+}
+
+a.link:active {
+    color: #b2b2b2;
+}
+
+a.active {
+    color: #766357;
+}
+
+.welcome {
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+}
+
+
+.features-head {
+    line-height: 26px;
+    text-align: center;
+
+    background-color: #ffffff;
+}
+.features-head strong {
+    font-size: 21px;
+}
+
+.features-list,
+.features-of-city-list {
+    list-style: none;
+}
+.features-item {    
+    line-height: 21px;  
+    text-align: center;
+}
+.features-item h3 {
+    font-size: 21px;
+}
+.devils-bridge-feature,
+.city-feature  {
+    color: #ffffff;
+    background-color: #81b3d2;
+}
+.features-of-city-list {
+    background-color: #ffffff;
+
+}
+.features-of-city-list h4 {
+    font-size: 21px;
+}
+
+.appointment {
+    background-color: #ffffff;
+    text-align: center;
+    
+}
+.appointment strong {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+}
+.appointment-info {
+    line-height: 24px;
+}
+.appointment a {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.appointment-item {
+    line-height: 26px;
+    font-weight: 700;
+}
+ .appointment-item input[type="text"] {
+    background-color: #f2f2f2;
+
+    color: #000000;
+    font: inherit;
+    text-transform: uppercase;
+    line-height: 26px;
+    font-weight: 700;
+    border: 2px solid #f2f2f2;
+}
+
+.appointment-item input:hover {
+    background-color: #ebebeb; 
+}
+
+.appointment-item input:focus {
+    background-color: #ffffff;
+    border-color: #e5e5e5;
+}
+
+
+
+button.search {
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.appointment-item button {
+     background-color: #f2f2f2;
+}
+
+.filter fieldset {
+    border: none;
+}
+
+.filters {
+    background-image: url("../img/filter background.jpg");
+    background-repeat: no-repeat;
+}
+
+.filter legend {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.filter-option {
+    color: #ffffff;
+    list-style: none;
+}
+
+.price-controls {
+    color: #ffffff;
+}
+.price-controls input[type="text"] {
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    background-color: #3d729c;        /*этот цвет здесь пока не понятно как сделать фон прозрачным */
+
+}
+
+.filter button {
+    background-color: #3d729c;               /*этот цвет здесь  пока не понятно как сделать фон прозрачным */
+    border: 2px solid #ffffff;
+    font-weight: 400;    
+}
+
+.filter button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.catalog-item {
+    background-color: #ffffff;
+    list-style: none;
+    }
+
+.hotel-info h3 a{
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+}  
+
+
+.rating {
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+.main-footer {
+    background-color: #f9fbf6;
+}
+.catalog-footer {
+    background-color: #ffffff;
+}
+.footer-link a {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000000;
+}
+.footer-social {
+   list-style: none;
+}
+
+.footer-copyright p {
+    line-height: 26px;
+}
+.footer-copyright a {
+    
+}
