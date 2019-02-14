@@ -8,16 +8,19 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
-      <a href="index.html" class="main-header-logo" ><img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Седона"></a>
-      <nav class="main-navigation">
+    <header class="main-header container">
+
+      <a class="main-header-logo" ><img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Седона"></a>
+
+      <nav class="main-navigation">       
        <ul class="site-navigation">
-          <li><a class="link" href="info.html">Информация</a></li>
-          <li><a class="link" href="foto.html">Фото и видео</a></li>
-          <li><a class="link" href="statemap.html">Карта штата</a></li>
-          <li><a class="active link" href="catalog.html">Гостиницы</a></li>
+          <li class="left"><a class="link" href="#">Информация</a></li>
+          <li class="left"><a class="link" href="#">Фото и видео</a></li>          
+          <li class="right"><a class="link" href="#">Карта штата</a></li>
+          <li class="right"><a class="link" href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
+
     </header>
 
     <main class="container">
@@ -27,7 +30,7 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтр гостиниц</h2> 
         <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset>
+          <fieldset class="filter-column">
             <legend>Инфраструктура:</legend>
             <ul>
              <li class="filter-option">
@@ -44,7 +47,7 @@
              </li>
            </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="filter-column">
             <legend>Тип жилья:</legend>
             <ul class="type-of-housing-list">
               <li class="filter-option">
@@ -61,7 +64,8 @@
               </li>
             </ul>                 
           </fieldset>
-          <fieldset>
+          <div class="price-column">
+          <fieldset >
               <legend>Стоимость в сутки (Р):</legend>
               <div class="price-controls">
                 <div class="min-price">
@@ -77,7 +81,8 @@
                 <div class="toggle toggle-max"></div>
               </div>
           </fieldset>     
-          <button type="submit" class="button">Показать</button>            
+          <button type="submit" class="button">Показать</button>
+        </div>            
         </form>
         
       </section>
@@ -100,7 +105,7 @@
               <p>Гостиница</p>
               <p>От 4000 Р.</p>
               <a class="button blue-button" href="#">Подробнее</a>
-              <a class="button broun-button" href="#">Забронировать</a>     
+              <a class="button brown-button" href="#">Забронировать</a>     
             </div>
             <div class="hotel-rating">
               <p></p>
@@ -120,7 +125,7 @@
               <p>Мотель</p>
               <p>От 3000 Р.</p>
               <a class="button blue-button" href="#">Подробнее</a>
-              <a class="button broun-button" href="#">Забронировать</a>     
+              <a class="button brown-button" href="#">Забронировать</a>     
             </div>
             <div class="hotel-rating">
               <p></p>
@@ -140,7 +145,7 @@
               <p>Апартаменты</p>
               <p>От 2000 Р.</p>
               <a class="button blue-button" href="#">Подробнее</a>
-              <a class="button broun-button" href="#">Забронировать</a>     
+              <a class="button brown-button" href="#">Забронировать</a>     
             </div>
             <div class="hotel-rating">
               <p></p>
@@ -151,25 +156,24 @@
       </section>
 
     </main>
-    <footer class="main-footer catalog-footer">
+    <footer class="main-footer container">
 
-        <p class="footer-link">
+        <p class="footer-link footer">
           <a href="#visitsedona">#visitsedona</a>
         </p>
   
-       
-        <ul class="footer-social">
-          <li><a class="button social-button blue-button" href="#">твиттер</a></li>
-          <li><a class="button social-button blue-button" href="#">фейсбук</a></li>
-          <li><a class="button social-button blue-button" href="#">ютюб</a></li>
+        
+        <ul class="footer-social footer">
+          <li><a class="social-button button blue-button" href="#">твиттер</a></li>
+          <li><a class="social-button button blue-button" href="#">фейсбук</a></li>
+          <li><a class="social-button button blue-button" href="#">ютюб</a></li>
         </ul>
-       
+        
   
-        <div class="footer-copyright">
+        <div class="footer-copyright footer">
           <p>Website by</p>
           <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML academy"></a>
         </div>
-  
       </footer>
   
     </body>

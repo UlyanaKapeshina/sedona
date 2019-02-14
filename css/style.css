@@ -38,13 +38,13 @@ a {
     background-color: #5496bd;
     color: #88b6d1;
 }
-.broun-button {
+.brown-button {
     background-color: #766357;  
 }
-.broun-button:hover {
+.brown-button:hover {
     background-color: #604e43;
 } 
-.broun-button:active {
+.brown-button:active {
     background-color: #503e33;
     color: #857871;
 }
@@ -82,7 +82,10 @@ a.active {
     background-image: url("../img/bg.jpg");
     background-repeat: no-repeat;
 }
+/* .mask {
+    background-image:
 
+} */
 
 .features-head {
     line-height: 26px;
@@ -197,12 +200,12 @@ button.search {
 .price-controls input[type="text"] {
     color: #ffffff;
     border: 2px solid #ffffff;
-    background-color: #3d729c;        /*этот цвет здесь пока не понятно как сделать фон прозрачным */
+    background-color: transparent       /*этот цвет здесь пока не понятно как сделать фон прозрачным */
 
 }
 
 .filter button {
-    background-color: #3d729c;               /*этот цвет здесь  пока не понятно как сделать фон прозрачным */
+    background-color: transparent;               /*этот цвет здесь  пока не понятно как сделать фон прозрачным */
     border: 2px solid #ffffff;
     font-weight: 400;    
 }
@@ -230,7 +233,7 @@ button.search {
 }
 
 .main-footer {
-    background-color: #f9fbf6;
+    background-color: #f9fbf6; /*сделать прозрачным */
 }
 .catalog-footer {
     background-color: #ffffff;
@@ -250,4 +253,286 @@ button.search {
 }
 .footer-copyright a {
     
+}
+
+
+/* СЕТКА */
+
+body { margin: 0 }
+img { max-width: 100% }
+a { text-decoration: none }
+
+.feedback { color: black }
+.feedback ul { list-style: none }
+.feedback p { margin-bottom: 0 }
+
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+
+.visually-hidden {
+    display: none;
+}
+
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    
+     }
+
+.site-navigation {
+    display: flex;
+    margin: 0;
+    padding: 14px 73px 16px 73px;
+
+    list-style: none;
+}
+
+.site-navigation li {
+    width: 240px;
+    
+
+}
+
+.site-navigation li:nth-child(2) {
+    margin-right: auto;
+}
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4) {
+    text-align: right;
+}
+
+.main-header {
+    position: relative;
+}
+
+.main-header-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140;
+    height: 71;
+}
+
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+.welcome p {
+    padding: 0;
+    margin: 75px 0 86px 0;
+    
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+}
+
+.features-head {
+    padding: 60px 0 51px 0;
+}
+
+.features-head strong {
+    width: 494px;
+    padding-bottom: 27px;
+    display: block;
+    margin: 0 auto;
+}
+
+.features-head p {
+    width: 494px;
+    margin: 0 auto;
+}
+
+
+
+
+.features-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}
+
+.feature {
+    width: 400px;
+    padding-top: 47px;
+    padding-bottom: 59px; 
+    margin: 0; 
+    
+
+}
+.feature h3,
+.features-of-city-item h4 {
+    width: 162px;
+     
+    margin: 0 auto;
+    margin-bottom: 23px;
+}
+.feacher-number {
+    width: 310px;
+    
+    margin: 0 auto;
+    margin-bottom: 22px;
+}
+
+.description {
+    width: 310px;
+    margin: 0;
+    
+}
+.features-item-foto {
+    padding: 0;
+    margin: 0;
+
+}
+.city {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.features-of-city-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+.features-of-city-item {
+    width: 400px;
+    padding: 161px 45px 83px 45px;    
+}
+
+
+
+
+.features-item-bridge {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+    
+
+}
+
+
+
+
+
+
+
+.appointment-text {
+    padding-top: 50px;
+    width: 568px;
+    margin: 0 auto;
+
+}
+
+.appointment strong {
+    width: 438px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+.appointment-info {
+    
+    width: 438px;
+    margin: 0 auto;
+    margin-bottom: 28px;
+
+}
+
+.open-form {
+    display: block;
+    width: 568px;
+    margin: 0 auto;
+    padding: 30px 134px;
+
+}
+
+
+.appointment-form {
+    width: 568px;
+    margin: 0 auto;
+    display: none;
+}
+.appointment-form-button:hover .appointment-form {
+    display: block;
+}
+.modal-map {
+    padding: 0;
+    margin: 0;
+}
+.modal-map p {
+    padding: 0;
+    margin: 0;
+}
+
+
+.main-footer {
+    display: flex;
+    align-items: center;
+    
+}
+
+.footer {
+    width: 400px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
+
+/* Каталог */
+
+
+
+
+.catalog-list {
+
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  
+    list-style: none;
+}
+
+.catalog-item {
+    padding-left: 152px;
+    padding-right: 152px;
+    padding-bottom: 30px;
+    padding-top: 26px;
+}
+
+.filter {
+    display: flex;    
+    padding: 0 72px;
+
+}
+
+.filter-column {
+    width: 240px;
+    padding: 0;
+    margin: 0;
+}
+
+
+.price-column {
+    width: 317px;
+    padding: 0;
+    margin: 0;
+    margin-left: 259px;    
 }

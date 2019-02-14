@@ -8,23 +8,29 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
+    
+    <header class="main-header container">
+
       <a class="main-header-logo" ><img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Седона"></a>
-      <nav class="main-navigation">
+
+      <nav class="main-navigation">       
        <ul class="site-navigation">
-          <li><a class="link" href="#">Информация</a></li>
-          <li><a class="link" href="#">Фото и видео</a></li>
-          <li><a class="link" href="#">Карта штата</a></li>
-          <li><a class="link" href="catalog.html">Гостиницы</a></li>
+          <li class="left"><a class="link" href="#">Информация</a></li>
+          <li class="left"><a class="link" href="#">Фото и видео</a></li>          
+          <li class="right"><a class="link" href="#">Карта штата</a></li>
+          <li class="right"><a class="link" href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
+
     </header>
 
     <main class="container">
 
       <div class="welcome">
+        
+        <p><img src="img/welcome.png" width="459" height="353" alt="Добро пожаловать в Седону"></p>
         <h1 class="visually-hidden">Штат Седона</h1>
-        <p><img src="img/welcome.png" width="459" height="353" alt="Welcome"></p>
+        <div class="mask"></div>
       </div>
       
       <section class="features">
@@ -37,66 +43,69 @@
                 
         <ul class="features-list">
 
-          <li class="features-item">
+          <li class="features-item features-item-city">
 
             <div class="city">
-              <div class="city-feature">
+              <div class="city-feature feature">
                <h3>Настоящий городок</h3>
-               <p>-№1-</p>
-               <p>Седона не аттракцион для туристов, в нем течет своя жизнь</p>
+               <p class="feacher-number">-№1-</p>
+               <p class="description">Седона не аттракцион для туристов, в нем течет своя жизнь</p>
               </div>
-              <p><img src="img/city.jpg" width="800" height="256" alt="Настоящий городок" ></p>
+              <p class="features-item-foto"><img src="img/city.jpg" width="800" height="256" alt="Настоящий городок" ></p>
             </div>
 
             <ul class="features-of-city-list">
               <li class="features-of-city-item">
-                <h4>Жилье</h4>
-                <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                <h4>Жильё</h4>
+                <p class="description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
               <li class="features-of-city-item">
                 <h4>Еда</h4>
-                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <p class="description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
               <li class="features-of-city-item">
                 <h4>Сувениры</h4>
-                <p>Не только китайского, но и местного производства!</p>
+                <p class="description">Не только китайского, но и местного производства!</p>
               </li>
             </ul>
 
           </li>
 
-          <li class="features-item">
-            <div class="devils-bridge-feature">
+          <li class="features-item features-item-bridge">
+            <div class="devils-bridge-feature feature">
              <h3>Там есть мост дьявола</h3>
-             <p>№2</p>
-             <p>Да, по нему можно пройти, если вы осмелитесь</p>
+             <p class="feacher-number">-№2-</p>
+             <p class="description">Да, по нему можно пройти, если вы осмелитесь</p>
             </div>
-            <p><img src="img/devil's-bridge.jpg" width="800" height="256" alt="Мост дьявола"></p>
+            <p class="features-item-foto"><img src="img/devil's-bridge.jpg" width="800" height="256" alt="Мост дьявола"></p>
           </li>
 
-          <li class="features-item">
+          <li class="features-item feature">
             <h3>Небольшая площадь</h3>
-            <p>№3</p>
-            <p>Все достопримечательности находятся очень близко</p>
+            <p class="feacher-number">№3</p>
+            <p class="description">Все достопримечательности находятся очень близко</p>
           </li>
 
-          <li class="features-item">
+          <li class="features-item feature">
             <h3>Красивая дорога</h3>
-            <p>№4</p>
-            <p>Ехать в седону из лас-вегаса совсем не скучно</p>
+            <p class="feacher-number">№4</p>
+            <p class="description">Ехать в седону из лас-вегаса совсем не скучно</p>
           </li>
 
-          <li class="features-item">
+          <li class="features-item feature">
             <h3>Мало туристов</h3>
-            <p>№5</p>
-            <p>Большинство туристов едет в Гранд-Каньон и толпится там</p>
+            <p class="feacher-number">№5</p>
+            <p class="description">Большинство туристов едет в Гранд-Каньон и толпится там</p>
           </li>
         </ul>
       </section>
       <section class="appointment">
-        <strong>Заинтересовались?</strong>
-        <p class="appointment-info">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="open-form button blue-button" href="#">Поиск гостиницы в Седоне</a>
+        <div class="appointment-text">
+         <strong>Заинтересовались?</strong>
+         <p class="appointment-info">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        </div>
+        <div class="appointment-form-button">
+        <a class="open-form button brown-button" href="#">Поиск гостиницы в Седоне</a>        
         <form class="appointment-form" action="https://echo.htmlacademy.ru" method="get">
           <p class="appointment-item">
            <label for="date-arrival">Дата заезда</label>
@@ -121,40 +130,39 @@
            <input type="text" id="children" name="children" value="0" placeholder="">
            <button type="button" class="button" name="plus"></button> 
           </p>
-          <button type="submit" class="search button broun-button">Найти</button>                    
-        </form>        
+          <button type="submit" class="search button blue-button">Найти</button>                    
+        </form>
+      </div>        
       </section>
       <section class="modal modal-map">
         <h2 class="visually-hidden">Седона на карте</h2>
         <p>
           <img src="img/map.png" width="1200" height="593" alt="Седона на карте">
-        </p>
-        
+        </p>      
 
       </section>
       
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer container">
 
-      <p class="footer-link">
+      <p class="footer-link footer">
         <a href="#visitsedona">#visitsedona</a>
       </p>
 
       
-      <ul class="footer-social">
+      <ul class="footer-social footer">
         <li><a class="social-button button blue-button" href="#">твиттер</a></li>
         <li><a class="social-button button blue-button" href="#">фейсбук</a></li>
         <li><a class="social-button button blue-button" href="#">ютюб</a></li>
       </ul>
       
 
-      <div class="footer-copyright">
+      <div class="footer-copyright footer">
         <p>Website by</p>
         <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML academy"></a>
       </div>
-
     </footer>
-
+    
   </body>
 </html>
