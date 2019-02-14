@@ -220,7 +220,7 @@ button.search {
     list-style: none;
     }
 
-.hotel-info h3 a{
+.hotel-info h3 {
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
@@ -274,12 +274,10 @@ html { box-sizing: border-box; }
     display: none;
 }
 
-
 .container {
     width: 1200px;
-    margin: 0 auto;
-    
-     }
+    margin: 0 auto;    
+}
 
 .site-navigation {
     display: flex;
@@ -291,13 +289,12 @@ html { box-sizing: border-box; }
 
 .site-navigation li {
     width: 240px;
-    
-
 }
 
 .site-navigation li:nth-child(2) {
     margin-right: auto;
 }
+
 .site-navigation li:nth-child(3),
 .site-navigation li:nth-child(4) {
     text-align: right;
@@ -321,10 +318,10 @@ html { box-sizing: border-box; }
     flex-direction: column;
     align-items: center;   
 }
+
 .welcome p {
     padding: 0;
-    margin: 75px 0 86px 0;
-    
+    margin: 75px 0 86px 0;    
 }
 
 .features {
@@ -348,9 +345,6 @@ html { box-sizing: border-box; }
     margin: 0 auto;
 }
 
-
-
-
 .features-list {
     display: flex;
     flex-wrap: wrap;
@@ -365,9 +359,8 @@ html { box-sizing: border-box; }
     padding-top: 47px;
     padding-bottom: 59px; 
     margin: 0; 
-    
-
 }
+
 .feature h3,
 .features-of-city-item h4 {
     width: 162px;
@@ -375,16 +368,16 @@ html { box-sizing: border-box; }
     margin: 0 auto;
     margin-bottom: 23px;
 }
+
 .feacher-number {
-    width: 310px;
-    
+    width: 310px;    
     margin: 0 auto;
     margin-bottom: 22px;
 }
 
 .description {
     width: 310px;
-    margin: 0;
+    margin: 0 auto;
     
 }
 .features-item-foto {
@@ -403,15 +396,12 @@ html { box-sizing: border-box; }
     padding: 0;
     margin: 0;
     list-style: none;
-
 }
+
 .features-of-city-item {
     width: 400px;
     padding: 161px 45px 83px 45px;    
 }
-
-
-
 
 .features-item-bridge {
     display: flex;
@@ -419,21 +409,12 @@ html { box-sizing: border-box; }
     justify-content: flex-start;
     padding: 0;
     margin: 0;
-    
-
 }
-
-
-
-
-
-
 
 .appointment-text {
     padding-top: 50px;
     width: 568px;
     margin: 0 auto;
-
 }
 
 .appointment strong {
@@ -442,12 +423,12 @@ html { box-sizing: border-box; }
     margin: 0 auto;
     margin-bottom: 24px;
 }
+
 .appointment-info {
     
     width: 438px;
     margin: 0 auto;
     margin-bottom: 28px;
-
 }
 
 .open-form {
@@ -455,7 +436,6 @@ html { box-sizing: border-box; }
     width: 568px;
     margin: 0 auto;
     padding: 30px 134px;
-
 }
 
 
@@ -464,9 +444,11 @@ html { box-sizing: border-box; }
     margin: 0 auto;
     display: none;
 }
-.appointment-form-button:hover .appointment-form {
+
+/* .appointment-form-button:hover .appointment-form {
     display: block;
-}
+} */
+
 .modal-map {
     padding: 0;
     margin: 0;
@@ -476,11 +458,9 @@ html { box-sizing: border-box; }
     margin: 0;
 }
 
-
 .main-footer {
     display: flex;
-    align-items: center;
-    
+    align-items: center;    
 }
 
 .footer {
@@ -511,15 +491,47 @@ html { box-sizing: border-box; }
 }
 
 .catalog-item {
-    padding-left: 152px;
-    padding-right: 152px;
+    display: flex;
+    padding-left: 73px;
+    padding-right: 73px;
     padding-bottom: 30px;
     padding-top: 26px;
 }
 
+.catalog-item > p  {
+    margin: 0;
+    margin-right: 30px;
+    
+}
+
+.hotel-rating {
+    margin-left: auto;
+}
+
+.hotel-info h3 {
+    margin: 0;
+    margin-bottom: 6px;
+}
+.hotel-info p {
+    margin: 0;
+    margin-bottom: 16px;
+    margin-right: 39px;
+    display: inline-block;
+}
+
+.buttons .blue-button {
+    display: inline-block;
+    padding: 2px 19px 4px 17px;
+    margin-right: 6px;
+}
+.buttons .brown-button {
+    display: inline-block;
+    padding: 2px 16px 4px 17px;
+}
+
 .filter {
     display: flex;    
-    padding: 0 72px;
+    padding: 0 73px;
 
 }
 
@@ -531,8 +543,8 @@ html { box-sizing: border-box; }
 
 
 .price-column {
-    width: 317px;
+    width: 319px;
     padding: 0;
     margin: 0;
-    margin-left: 259px;    
+    margin-left: auto;   
 }
