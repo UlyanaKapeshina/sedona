@@ -380,11 +380,16 @@ html { box-sizing: border-box; }
     margin: 0 auto;
     
 }
-.features-item-foto {
+.features-item-foto img {
+    display: block;
     padding: 0;
     margin: 0;
-
 }
+.features-item-foto  {
+    padding: 0;
+    margin: 0;
+}
+
 .city {
     display: flex;
     padding: 0;
@@ -442,12 +447,36 @@ html { box-sizing: border-box; }
 .appointment-form {
     width: 568px;
     margin: 0 auto;
-    display: none;
+    padding: 55px;    
 }
 
-/* .appointment-form-button:hover .appointment-form {
-    display: block;
-} */
+button.search {
+    padding: 16px 196px;
+    text-align: center;    
+}
+
+p.appointment-item {
+    display: inline-block;
+    margin: 0;
+}
+.appointment-item label {
+    margin: 0;
+}
+.appointment-item .date{
+    width: 346px; 
+    padding: 4px 0 4px 11px;
+    margin: 0;
+    margin-bottom: 30px; 
+}
+.appointment-item .people {
+    width: 115px;
+    margin: 0;
+    margin-bottom: 55px;
+    padding: 4px auto;
+    text-align: center;
+}
+
+
 
 .modal-map {
     padding: 0;
@@ -529,9 +558,12 @@ html { box-sizing: border-box; }
     padding: 2px 16px 4px 17px;
 }
 
+
+
+
 .filter {
     display: flex;    
-    padding: 0 73px;
+    padding: 27px 73px 31px 73px;
 
 }
 

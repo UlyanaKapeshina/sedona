@@ -105,29 +105,32 @@
          <p class="appointment-info">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         </div>
         <div class="appointment-form-button">
-        <a class="open-form button brown-button" href="#">Поиск гостиницы в Седоне</a>        
+        <a class="open-form button brown-button" href="#">Поиск гостиницы в Седоне</a>  
+        
+        
+
         <form class="appointment-form" action="https://echo.htmlacademy.ru" method="get">
           <p class="appointment-item">
            <label for="date-arrival">Дата заезда</label>
-           <input type="text" name="date-arrival" id="date-arrival" value="24 апреля 2017" placeholder="">
+           <input class="date" type="text" name="date-arrival" id="date-arrival" value="24 апреля 2017" placeholder="">
            <button type="button" class="button" name="calendar"></button>
           </p>
           <p class="appointment-item">        
            <label for="date-departure">Дата выезда</label>
-           <input type="text" name="date-departure" id="date-departure" value="4 июля 2017" placeholder="" >
+           <input class="date" type="text" name="date-departure" id="date-departure" value="4 июля 2017" placeholder="" >
            <button type="button" class="button" name="calendar"></button>
           </p>
           
-          <p class="appointment-item"> 
+          <p class="appointment-item appointment-item-adults"> 
             <label for="adults">Взрослые</label>
             <button type="button" class="button" name="minus"></button>               
-            <input type="text" id="adults" name="adults" value="0" placeholder="">
+            <input class="people" type="text" id="adults" name="adults" value="0" placeholder="">
             <button type="button" class="button" name="plus"></button> 
           </p>   
-          <p class="appointment-item"> 
+          <p class="appointment-item appointment-item-children"> 
            <label for="children">Дети</label>
            <button type="button" class="button" name="minus"></button>               
-           <input type="text" id="children" name="children" value="0" placeholder="">
+           <input class="people" type="text" id="children" name="children" value="0" placeholder="">
            <button type="button" class="button" name="plus"></button> 
           </p>
           <button type="submit" class="search button blue-button">Найти</button>                    
