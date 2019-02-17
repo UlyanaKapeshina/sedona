@@ -333,6 +333,7 @@ input[type="radio"].visually-hidden {
     transform: translateX(-50%);
     width: 140;
     height: 71;
+    z-index: 10;
 }
 
 
@@ -342,12 +343,26 @@ input[type="radio"].visually-hidden {
 .welcome {
     display: flex;
     flex-direction: column;
-    align-items: center;   
+    align-items: center; 
+    position: relative;  
 }
 
 .welcome p {
     padding: 0;
     margin: 75px 0 82px 0;    
+}
+
+.welcome::after {
+    content: "";
+    position: absolute;
+    width: 1200px;
+    height: 59px;
+    bottom: -2px;
+    
+
+    background-color: transparent;
+    background-image: url("../img/polygon.svg");
+    background-repeat: no-repeat;    
 }
 
 .features {
@@ -407,8 +422,7 @@ input[type="radio"].visually-hidden {
     padding: 0;
     margin: 0;
 }
-.features-item-bridge p,
-.city p {
+.image-feature {
     padding: 0;
     margin: 0;
 }
@@ -445,10 +459,11 @@ input[type="radio"].visually-hidden {
 }
 
 .food::before {
-    background-image: url("../img/icon-2.svg");
+    background-image: url("../img/icon-3.svg");
 }
 .souvenirs::before {
-    background-image: url("../img/icon-3.svg");
+    background-image: url("../img/icon-2.svg");
+    margin-left: -32px;
 }
 
 .features-item-bridge {
@@ -540,11 +555,13 @@ input[type="radio"].visually-hidden {
 .calendar:hover {
     fill: black;
     background-color: transparent;
+    cursor:pointer;
 }
 
 .calendar:active {
     fill: #81b3d2; 
     background-color: transparent;
+    cursor:pointer;
 }
 
 button.minus {
@@ -554,41 +571,57 @@ button.minus {
     height: 38px;
     margin-left: 114px;
     z-index: 10;
-    background-image: url("../img/спрайтминусы.png");
-    background-repeat: no-repeat;
-    background-position: 13px -88px;
-    background-color: transparent; 
-    outline: none;
+    cursor:pointer;
+    outline: none;  
+    background-color:  transparent; 
 }
 
-button.minus:hover {
-    background-position: 13px 18px;
-}
-
-button.minus:active {
-    background-position: 13px -35px;
+button.minus::after{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 3px;
+    background-color: #b2b2b2;
+    transform: translate(-50%, -50%);
 }
 
 button.plus {
-    position: absolute;
-    
+    position: absolute;    
     width: 38px;
     height: 38px;
-    margin-left: 191px;
-    background-image: url("../img/спрайтплюсы.png");
-    background-repeat: no-repeat;
-    background-position: 14px 14px;
-    background-color: transparent;
-   
+    margin-left: 191px;   
     outline: none;
+    cursor: pointer;
+    background-color:  transparent;
 }   
 
-button.plus:hover {
-    background-position: 14px -47px;
+button.plus::after{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 3px;
+    background-color: #b2b2b2;
+    transform: translate(-50%, -50%);
+}
+button.plus::before{
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 12px;
+    background-color: #b2b2b2;
+    transform: translateX(-50%) translateY(-50%);
 }
 
-button.plus:active {
-    background-position: 14px -108px;
+button.plus:hover::after,
+button.plus:hover::before,
+button.minus:hover::after {
+    background-color: black;
+}
+
+button.plus:focus::after,
+button.plus:focus::before,
+button.minus:focus::after {
+    background-color: #81b3d2; 
 }
 
 .appointment-item label {
@@ -608,6 +641,7 @@ button.plus:active {
     padding: 16px;
     text-align: center; 
     margin-top: 24px;
+    cursor: pointer;
      
 }
 
