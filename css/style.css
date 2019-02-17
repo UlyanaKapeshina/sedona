@@ -278,8 +278,22 @@ html { box-sizing: border-box; }
 *, *::before, *::after { box-sizing: inherit; }
 
 
-.visually-hidden {
-    display: none;
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .container {
@@ -729,18 +743,18 @@ button.plus:active {
 .hotel-info p {
     margin: 0;
     margin-bottom: 15px;
-    margin-right: 39px;
+    width: 116px;
     display: inline-block;
 }
 
 .buttons .blue-button {
     display: inline-block;
-    padding: 2px 19px 4px 17px;
-    margin-right: 6px;
+    padding: 3px 19px 3px 17px;
+    margin-right: 2px;
 }
 .buttons .brown-button {
     display: inline-block;
-    padding: 2px 16px 4px 17px;
+    padding: 3px 16px 3px 17px;
 }
 
 .hotel-rating {
@@ -771,9 +785,14 @@ p.villas-stars {
     width: 41px;
 }
 
+
 p.rating {
     padding: 2px 16px 3px 13px; 
 }
+
+
+
+
 
 .filter {
     display: flex;    
@@ -792,3 +811,54 @@ p.rating {
     margin: 0;
     margin-left: auto;   
 }
+
+
+.filter-column legend {
+    margin-bottom: 23px;
+}
+.filter ul {
+    padding: 0;
+    margin: 0;
+}
+.filter-option {
+    /* background: rgba(0, 128, 0, 0.2);
+    box-shadow: 0 0 0 3px green; */
+    
+    margin-bottom: 23px;
+    padding-left: 40px;
+}
+
+.filter-option label {
+    position: relative;  
+    display: block; 
+    cursor: pointer;
+  user-select: none;
+     
+}
+
+.filter-input-checkbox + label::before {
+    content: "";
+    position: absolute;
+  
+    width: 23px;
+    height: 23px;
+    background-image: url("../img/checkbox-off.svg");
+  
+   
+    left:-40px;
+    top: 0;
+  }
+
+.filter-input-checkbox:checked + label::after{
+    content: "";
+    position: absolute;
+  
+    width: 27px;
+    height: 23px;
+    left:-40px;
+    top: 0;
+    
+    background-image: url("../img/checkbox-on.svg")
+}
+
+  
