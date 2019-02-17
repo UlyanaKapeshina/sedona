@@ -478,7 +478,6 @@ input[type="radio"].visually-hidden {
 .open-form {
     display: inline-block;
     width: 568px;
-    /* margin: 0 auto; */
     padding: 30px 134px;
 }
 
