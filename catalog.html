@@ -10,7 +10,7 @@
   <body>
     <header class="main-header container">
 
-      <a href="index.html" class="main-header-logo" ><img src="img/logo-sedona.svg" width="140px" height="71px" alt="Логотип Седона"></a>
+      <a href="index.html" class="main-header-logo" ><img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Седона"></a>
 
       <nav class="main-navigation">       
        <ul class="site-navigation">
@@ -60,31 +60,57 @@
               </li>
               <li class="filter-option">
                 
-                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="apartments" id="apartments" checked><label for="apartments">Апартаменты</label>
+                <input class="visually-hidden filter-input-checkbox " type="checkbox" name="apartments" id="apartments" checked><label for="apartments">Апартаменты</label>
               </li>
             </ul>                 
           </fieldset>
           <div class="price-column">
-          <fieldset >
-              <legend>Стоимость в сутки (Р):</legend>
+
+              <div class="filter-range-title">Стоимость в сутки (Р):</div>
+
               <div class="price-controls">
-                <div class="min-price">
-                  <label>От<input type="text" value="0"></label> 
-                </div>
-                <div class="max-price">
-                  <label>До<input type="text" value="3000"></label>
-                </div>
+
+                
+                  <label class="min-price">От<input type="text" name="min-price" value="0"></label> 
+                
+                  <label class="max-price" >До<input type="text" name="max-price" value="3000"></label>
+                
               </div>
+
+
+
               <div class="range-controls">
-                <div class="scale"><div class="bar"></div></div>
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
                 <div class="toggle toggle-min"></div>
                 <div class="toggle toggle-max"></div>
               </div>
-          </fieldset>     
-          <button type="submit" class="button">Показать</button>
+
+
+
+               
+          <button type="submit" class="button btn-transparent">Показать</button>
         </div>            
         </form>
         
+      </section>
+      <section class="results">
+        <p class="find">Найдено: 3</p>
+        <div class="sorting">
+          <h4>Сортировка:</h4>
+          <ul class="sorting-list">
+              <li class="sorting-option"><a class="active" href="#">По цене</a></li>
+              <li class="sorting-option"><a href="#">По типу</a></li>
+              <li class="sorting-option"><a href="#">По рейтингу</a></li>
+            </ul>
+          </div>
+        <p class="icons">
+          <button class="icon-up"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
+          </button>
+          <button class="icon-down active"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
+          </button>
+        </p>
       </section>
 
       <section class="catalog">
@@ -94,7 +120,7 @@
         <ul class="catalog-list">
           <li class="catalog-item">
             <p class="hotel-image">
-                  <img src="img/hotel-foto-1.jpg" width="135px" height="90px" alt="Amara Resort & Spa">
+                  <img src="img/hotel-foto-1.jpg" width="135" height="90" alt="Amara Resort & Spa">
             </p>
             <div class="hotel-info">
               <h3>
@@ -116,7 +142,7 @@
           </li>  
           <li class="catalog-item">
               <p class="hotel-image">
-                  <img src="img/hotel-foto-2.jpg" width="135px" height="90px" alt="Desert Quail Inn">
+                  <img src="img/hotel-foto-2.jpg" width="135" height="90" alt="Desert Quail Inn">
                 </p>
             <div class="hotel-info">
               <h3>
@@ -138,7 +164,7 @@
           </li>
           <li class="catalog-item">
               <p class="hotel-image">
-                  <img src="img/hotel-foto-3.jpg" width="135px" height="90px" alt="Villas at Poco Diablo">
+                  <img src="img/hotel-foto-3.jpg" width="135" height="90" alt="Villas at Poco Diablo">
                 </p>
             <div class="hotel-info">
               <h3>
@@ -170,13 +196,10 @@
   
         
         <ul class="footer-social footer">
-          <li><a class="social-button button blue-button" href="#"><span class="visually-hidden">твиттер</span><?xml version="1.0" encoding="utf-8"?>
-            <!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+          <li><a class="social-button button blue-button" href="#"><span class="visually-hidden">твиттер</span>            
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-               width="17px" height="15px" viewBox="0 0 17 15" enable-background="new 0 0 17 15" xml:space="preserve">
-            <!-- <image overflow="visible" width="17" height="15" xlink:href="t.png" >
-            </image> -->
+               width="17px" height="15px" viewBox="0 0 17 15" enable-background="new 0 0 17 15" xml:space="preserve">         
+            
             <g id="W6EeEF_1_">
               <g>
                 <path fill="#FFFFFF" d="M10.95,0.144c1.685-0.496,2.984,0.27,3.577,1.179c0.673-0.231,1.331-0.481,2.011-0.708
@@ -190,22 +213,17 @@
             </svg>
             
             </a></li>
-          <li><a class="social-button button blue-button" href="#"><span class="visually-hidden">фейсбук</span><?xml version="1.0" encoding="utf-8"?>
-            <!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-            <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          <li><a class="social-button button blue-button" href="#"><span class="visually-hidden">фейсбук</span>
+             <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                width="12px" height="22px" viewBox="0 0 12 22" enable-background="new 0 0 12 22" xml:space="preserve">
             <path fill="#FFFFFF" d="M12,4V0H8C5.791,0,4,1.791,4,4v4H0v4h4v10h4V12h4V8H8V4H12z"/>
             </svg>
             </a></li>
-          <li><a class="social-button button blue-button" href="#"><span class="visually-hidden">ютюб</span><?xml version="1.0" encoding="utf-8"?>
-            <!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+          <li><a class="social-button button blue-button" href="#"><span class="visually-hidden">ютюб</span>           
+            
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                width="20px" height="16px" viewBox="0 0 20 16" enable-background="new 0 0 20 16" xml:space="preserve">
-            <!-- <image overflow="visible" enable-background="new    " width="20" height="16" xlink:href="youtube.png" >
-            </image> -->
-            <path fill="#FFFFFF" d="M17,0H3C1.35,0,0,1.35,0,3v10c0,1.65,1.35,3,3,3h14c1.65,0,3-1.35,3-3V3C20,1.35,18.65,0,17,0z
+               <path fill="#FFFFFF" d="M17,0H3C1.35,0,0,1.35,0,3v10c0,1.65,1.35,3,3,3h14c1.65,0,3-1.35,3-3V3C20,1.35,18.65,0,17,0z
                M6.027,11.998V4.002L15.014,8L6.027,11.998z"/>
             </svg>
             </a></li>
