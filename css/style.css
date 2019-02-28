@@ -74,7 +74,8 @@ input[type="radio"].visually-hidden {
 
 .container {
     width: 1200px;
-    margin: 0 auto;    
+    margin: 0 auto;
+    box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);    
 }
 
 .main-navigation {
@@ -95,7 +96,9 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation li {
-    width: 25%;
+    width: 25%; 
+    padding-right: 10px;  
+    
 }
 
 .site-navigation li:nth-child(2) {
@@ -103,10 +106,18 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation li:nth-child(3),
-.site-navigation li:nth-child(4) {
+.site-navigation li:nth-child(4n),
+.site-navigation li:nth-child(3n+4) {
     text-align: right;
 }
 
+ {
+    text-align: right;
+}
+
+.site-navigation li:nth-child(4n) {
+    padding: 0;
+}
 .main-header {
     position: relative;
 }
@@ -121,7 +132,10 @@ input[type="radio"].visually-hidden {
 }
 
 a.link {
+    display: block;
     color: #000000;
+    /* max-width: 300px; */
+    
 }
 
 a.link:hover {
@@ -267,21 +281,20 @@ p.image-feature {
     position: absolute;
     height: 76px;
     width: 76px;
-    bottom: 197px;
-    left: 200px;
-    transform: translateX(-50%);
-
+    top: 58px;
+    left: 162px;   
     background-color: transparent;
     background-image: url("../img/icon-1.svg");
     background-repeat: no-repeat;    
 }
 
 .food::before {
-    background-image: url("../img/icon-3.svg");
+    background-image: url("../img/icon-3.svg");    
+    width: 74px;
 }
 .souvenirs::before {
     background-image: url("../img/icon-2.svg");
-    
+    width: 64px;    
 }
 
 .features-item-bridge {
@@ -321,6 +334,10 @@ p.image-feature {
 }
 
 .appointment-form {
+    position: relative;
+}
+
+.modal-appointment-form {
     background-color: #ffffff;
     width: 568px;
     margin: 0 auto;
@@ -329,12 +346,14 @@ p.image-feature {
     position: absolute;
     z-index: 10;
     left: 50%;
-    margin-left: -284px;
+    top: 0;
+    transform: translateX(-50%);
 
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
     box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+    display: none;
 }    
 .appointment-item {
     position: relative;
@@ -502,8 +521,7 @@ button.search {
     padding: 16px;
     text-align: center; 
     margin-top: 24px;
-    cursor: pointer;
-     
+    cursor: pointer;     
 }
 
 .map {
@@ -516,10 +534,6 @@ button.search {
     margin: 0;
 }
 
-
-
-
-
 .filter {
     display: flex;    
     padding: 27px 73px 31px 73px;
@@ -530,8 +544,6 @@ button.search {
     padding: 0;
     margin: 0;
 }
-
-
 
 .filter-column legend {
     margin-bottom: 23px;
@@ -569,11 +581,9 @@ button.search {
   
     width: 23px;
     height: 23px;
-    background-image: url("../img/checkbox-off.svg");
-  
-   
     left:-40px;
     top: 0;
+    background-image: url("../img/checkbox-off.svg");    
   }
 
 .filter-input-checkbox:checked + label::after{
@@ -587,7 +597,28 @@ button.search {
     
     background-image: url("../img/checkbox-on.svg")
 }
+.filter-input-checkbox-disabled + label::before {
+    content: "";
+    position: absolute;
+  
+    width: 23px;
+    height: 23px;
+    left:-40px;
+    top: 0;
+    background-image: url("../img/checkbox-off-blocked.svg");   
+  }
 
+.filter-input-checkbox-disabled:checked + label::after{
+    content: "";
+    position: absolute;
+  
+    width: 27px;
+    height: 23px;
+    left:-40px;
+    top: 0;
+    
+    background-image: url("../img/checkbox-on-blocked.svg")
+}
 .price-column {
     width: 318px;
     padding: 0;
@@ -643,8 +674,6 @@ button.search {
     width: 90px;
     padding-left: 65px;
 }
-
-
 
 .price-controls input {
   width: 50px;
@@ -725,6 +754,7 @@ button.search {
     margin: 0;
     padding: 30px 73px;
     background-color: #fefefe;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .find{
@@ -740,6 +770,8 @@ button.search {
     display: flex;
     margin: 0;
     padding: 0;
+    align-items: center;
+    
 
 }
 .results h4 {
@@ -834,10 +866,6 @@ button.search {
     fill: #81b3d2; 
     
 }
-
-
-
-
 
 
 .catalog-list {   
@@ -1002,18 +1030,15 @@ p.rating {
     height: 41px;    
 }
 
-.footer-copyright a path,
-.footer-copyright a rect {
+.footer-copyright a svg{
     fill: black;
 }
 
-.footer-copyright a:hover path,
-.footer-copyright a rect  {
+.footer-copyright a:hover svg {
     fill: #81b3d2;
 }
 
-.footer-copyright a:active path,
-.footer-copyright a rect  {
+.footer-copyright a:active svg {
     fill: #b2b2b2;
 }
 
