@@ -303,7 +303,10 @@ p.image-feature {
     padding: 0;
     margin: 0;
 }
-
+.appointment {
+    position: relative;
+    z-index: 20;
+}
 .appointment-info {
     background-color: #ffffff;
     text-align: center;
@@ -332,29 +335,60 @@ p.image-feature {
     width: 568px;
     padding: 30px 134px;
 }
-
-.appointment-form {
-    position: relative;
+@keyframes bounce {
+    0% {transform: translateY(-86px)}
+    50% {transform: translateY(-43px)}
+    100% {transform: translateY(0)}
+}
+@keyframes shake {
+    0%,
+    100% {
+        transform: translateX(0)
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(10px)
+    }
+}
+.modal-appointment-form {
+    
+    display: none;
+    position: absolute;
+    z-index: 10;
+    left: 316px;
 }
 
-.modal-appointment-form {
+.appointment-form {
     background-color: #ffffff;
     width: 568px;
     margin: 0 auto;
     padding: 55px;
-    display: block;
-    position: absolute;
-    z-index: 10;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
+    
+    
 
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
     box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
-    display: none;
-}    
+} 
+
+.modal-show {
+   display: block;
+   animation: bounce 0.5s;
+   
+}
+.modal-error {
+    animation: shake 0.5s;
+}
 .appointment-item {
     position: relative;
     line-height: 26px;
@@ -379,7 +413,8 @@ p.image-feature {
     text-transform: uppercase;
     line-height: 26px;
     font-weight: 700;
-    border: 2px solid #f2f2f2;    
+    border: 2px solid #f2f2f2; 
+    outline-color: transparent;   
 }
 
 .appointment-item input:hover,
@@ -405,6 +440,7 @@ button.search {
     padding-right: 38px;
     text-align: center;
     position: relative;
+    outline-color: transparent;
 }
 
 
@@ -419,7 +455,7 @@ button.search {
     justify-content: center;
     align-items: center;
     fill: #b2b2b2;
-    outline: none;
+    outline-color: transparent;
     background-color: transparent;
 }
 
@@ -444,7 +480,7 @@ button.minus {
     left: 114px;
     z-index: 10;
     cursor:pointer;
-    outline: none;  
+    outline-color: transparent; 
     background-color:  transparent; 
 }
 
