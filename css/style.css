@@ -76,9 +76,10 @@ input[type="radio"].visually-hidden {
 .container {
     width: 1200px;
     margin: 0 auto;
-    box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15); 
-       
+    box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);       
 }
+
+/* ХЕДЕР */
 
 .main-navigation {
     font-size: 14px;
@@ -98,25 +99,24 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation li {
-    width: 240px; 
-    /* padding-right: 10px;   */
-    
+    width: 240px;    
 }
+
 .site-navigation li:nth-child(4n+3) {
     margin-left: auto;
 }
 .site-navigation li:nth-child(4n+1),
 .site-navigation li:nth-child(4n+2) {
-    text-align: left;    
+    text-align: left;  
+    padding-right:  10px; 
 }
 
 .site-navigation li:nth-child(4n+3),
 .site-navigation li:nth-child(4n+4) {
-    text-align: right;    
+    text-align: right;
+    padding-left: 10px;    
 }
-.site-navigation li:nth-child(4n+4) {
-    padding: 0;
-}
+
 .main-header {
     position: relative;       
 }
@@ -147,6 +147,8 @@ a.active {
     color: #766357;
 }
 
+/* ИНДЕКС */
+
 .welcome {
     background-image: url("../img/bg.jpg");
     background-repeat: no-repeat;
@@ -154,14 +156,14 @@ a.active {
     display: flex;
     flex-direction: column;
     align-items: center; 
-    position: relative;
-    
+    position: relative;    
 }
 
 .welcome p {
     padding: 0;
     margin: 76px 0 79px 0;    
 }
+
 .welcome img {
     display: block;
     padding: 0;
@@ -186,8 +188,7 @@ a.active {
     flex-direction: column;
     background-color: #eeeeee;
     position: relative;
-    z-index: 40;
-    
+    z-index: 40;    
 }
 
 .features-head {
@@ -198,6 +199,7 @@ a.active {
     background-color: #ffffff;
     padding: 60px 310px 51px 310px;
 }
+
 .features-head strong {
     font-size: 21px;
     margin: 0;   
@@ -217,8 +219,7 @@ a.active {
     padding: 0;
     margin: 0;
 
-    list-style: none;
-    
+    list-style: none;    
 }
 
 .feature {
@@ -289,6 +290,7 @@ p.image-feature {
     padding: 28px 45px 61px 45px; 
     position: relative;   
 }
+
 .features-of-city-item::before {
     content: "";
     position: absolute;
@@ -307,6 +309,7 @@ p.image-feature {
     width: 74px;
     height: 70px;
 }
+
 .souvenirs::before {
     background-image: url("../img/icon-2.svg");
     width: 64px;
@@ -319,10 +322,12 @@ p.image-feature {
     padding: 0;
     margin: 0;
 }
+
 .appointment {
     position: relative;
     z-index: 30;
 }
+
 .appointment-info {
     background-color: #ffffff;
     text-align: center;
@@ -391,8 +396,6 @@ p.image-feature {
     margin: 0 auto;
     padding: 55px;
     
-    
-
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -585,9 +588,9 @@ button.search {
 .map {
     padding: 0;
     margin: 0;
-    position: relative;
-    
+    position: relative;    
 }
+
 .map p {
     padding: 0;
     margin: 0;
@@ -595,23 +598,22 @@ button.search {
     top: 0;
     z-index: -1;
 }
+
 .map img {
     display: block;
     padding: 0;
-    margin: 0;
-    
+    margin: 0;    
 }
 
-.modal-map p {
-    margin: 0;
-  }
-  
 .map iframe {
+    display: block;
     position: relative;
-    z-index: 2;
-  
+    z-index: 10;
     border: none;
-  }
+}
+
+
+/* КАТАЛОГ */
 
 .filter {
     display: flex;    
@@ -699,6 +701,7 @@ button.search {
     
     background-image: url("../img/checkbox-on-blocked.svg")
 }
+
 .price-column {
     width: 318px;
     padding: 0;
@@ -729,14 +732,14 @@ button.search {
     background: #ffffff;
     transform: translate(-50%, -50%);
 
-  }
+}
 
 .filter-range-title {
     font-size: 16px;
     color: #ffffff;
     font-weight: 700;
     margin-bottom: 9px;
-  }
+}
 
 
 .price-controls label {
@@ -748,7 +751,8 @@ button.search {
     vertical-align: bottom;
   
     cursor: pointer;
-  }
+}
+
   .price-controls .min-price,
   .price-controls .max-price   {
     width: 90px;
@@ -775,19 +779,20 @@ button.search {
     position: relative;
   
     margin-bottom: 33px;
-  }
+}
+
 .range-controls .scale {
     height: 2px;
   
     background: rgba(255, 255, 255, 0.3);
-  }
+}
   
 .range-controls .bar {
     width: 80%;
     height: 2px;
   
     background: #ffffff;
-  }  
+}  
 
 .toggle {
     position: absolute;
@@ -853,9 +858,8 @@ button.search {
     line-height: 18px;
     padding: 5px 0 2px 0;
     align-items: center;
-    
-
 }
+
 .results h4 {
     margin: 0;
     padding: 0;
@@ -863,9 +867,8 @@ button.search {
     line-height: 18px;
     font-weight: 400;
     padding-right: 40px;
-
-
 }
+
 .sorting-list {  
     
     list-style: none;
@@ -880,6 +883,7 @@ button.search {
     color: #cacaca;
     padding-right: 30px;
 }
+
 .sorting-option a{
     color: #cacaca;
     border-bottom: 1px dotted #81b3d2;
@@ -910,8 +914,7 @@ button.search {
     position: relative;  
     display: block; 
     cursor: pointer;
-  user-select: none;
-     
+  user-select: none;     
 }
 
 .results .icons {
@@ -929,6 +932,7 @@ button.search {
     cursor: pointer;
     outline-color: transparent; 
 }
+
 .icon-down.active path,
 .icon-up.active path{
     fill: #81b3d2;
@@ -938,6 +942,7 @@ button.search {
 .icon-up path {
     fill: #cacaca;    
 }
+
 .icon-down:hover path,
 .icon-up:hover path
  {
@@ -948,8 +953,7 @@ button.search {
 .icon-up:active path, 
 .icon-down:focus path,
 .icon-up:focus path {
-    fill: #81b3d2; 
-    
+    fill: #81b3d2;     
 }
 
 
@@ -1010,15 +1014,13 @@ button.search {
 }
 
 .hotel-rating {
-    margin-left: auto;
-    /* padding-top: 2px;     */
+    margin-left: auto;   
 }
 
 .hotel-rating p {
     display: block;
     padding: 0;
     margin: 0;
-
 }
 
 p.stars {
@@ -1045,7 +1047,7 @@ p.rating {
     background-color: #f2f2f2;
 }
 
-
+/* ФУТЕР */
 
 .main-footer {
     background-color: #f9fbf6; 
