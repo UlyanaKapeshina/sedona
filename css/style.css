@@ -10,6 +10,7 @@ body {
     text-transform: uppercase;
 
     background-color: #f2f2f2;
+    
 }
 
 a {text-decoration: none}
@@ -75,7 +76,8 @@ input[type="radio"].visually-hidden {
 .container {
     width: 1200px;
     margin: 0 auto;
-    box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);    
+    box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15); 
+       
 }
 
 .main-navigation {
@@ -96,30 +98,27 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation li {
-    width: 25%; 
+    width: 22.72%; 
     padding-right: 10px;  
     
 }
-
-.site-navigation li:nth-child(2) {
-    text-align: left;
+.site-navigation li:nth-child(4n+3) {
+    margin-left: auto;
+}
+.site-navigation li:nth-child(4n+1),
+.site-navigation li:nth-child(4n+2) {
+    text-align: left;    
 }
 
-.site-navigation li:nth-child(3),
-.site-navigation li:nth-child(4n),
-.site-navigation li:nth-child(3n+4) {
-    text-align: right;
+.site-navigation li:nth-child(4n+3),
+.site-navigation li:nth-child(4n+4) {
+    text-align: right;    
 }
-
- {
-    text-align: right;
-}
-
-.site-navigation li:nth-child(4n) {
+.site-navigation li:nth-child(4n+4) {
     padding: 0;
 }
 .main-header {
-    position: relative;
+    position: relative;       
 }
 
 .main-header-logo {
@@ -134,8 +133,6 @@ input[type="radio"].visually-hidden {
 a.link {
     display: block;
     color: #000000;
-    /* max-width: 300px; */
-    
 }
 
 a.link:hover {
@@ -153,17 +150,23 @@ a.active {
 .welcome {
     background-image: url("../img/bg.jpg");
     background-repeat: no-repeat;
+    background-position: 0 -56px;
     display: flex;
     flex-direction: column;
     align-items: center; 
-    position: relative; 
+    position: relative;
+    
 }
 
 .welcome p {
     padding: 0;
-    margin: 75px 0 82px 0;    
+    margin: 76px 0 79px 0;    
 }
-
+.welcome img {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
 .welcome::after {
     content: "";
     position: absolute;
@@ -180,9 +183,14 @@ a.active {
 .features {
     display: flex;
     flex-direction: column;
+    background-color: #eeeeee;
+    position: relative;
+    z-index: 40;
+    
 }
 
 .features-head {
+    font-size: 21px;
     line-height: 26px;
     text-align: center;
 
@@ -198,6 +206,8 @@ a.active {
 
 .features-head p {
     margin: 0;
+    font-size: 14px;
+    line-height: 26px;
 }
 
 .features-list {
@@ -207,6 +217,7 @@ a.active {
     margin: 0;
 
     list-style: none;
+    
 }
 
 .feature {
@@ -305,12 +316,13 @@ p.image-feature {
 }
 .appointment {
     position: relative;
-    z-index: 20;
+    z-index: 30;
 }
 .appointment-info {
     background-color: #ffffff;
     text-align: center;
     padding-top: 50px;
+    
     
 }
 .appointment strong {
@@ -324,7 +336,7 @@ p.image-feature {
 .appointment-info p{
     line-height: 24px;width: 438px;
     margin: 0 auto;
-    margin-bottom: 28px;
+    margin-bottom: 47px;
 }
 
 .open-form {
@@ -334,10 +346,11 @@ p.image-feature {
     display: inline-block;
     width: 568px;
     padding: 30px 134px;
+    position: relative;
+    
 }
 @keyframes bounce {
-    0% {transform: translateY(-86px)}
-    50% {transform: translateY(-43px)}
+    0% {transform: translateY(-100%)}
     100% {transform: translateY(0)}
 }
 @keyframes shake {
@@ -363,7 +376,7 @@ p.image-feature {
     
     display: none;
     position: absolute;
-    z-index: 10;
+    z-index: -1;
     left: 316px;
 }
 
@@ -404,6 +417,10 @@ p.image-feature {
     width: 344px;
     padding: 4px;
 }
+::-webkit-input-placeholder {
+    color:#000000;
+}
+
 
  .appointment-item input[type="text"] {
     background-color: #f2f2f2;
@@ -569,20 +586,24 @@ button.search {
     padding: 0;
     margin: 0;
 }
-
+.map img {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
 .filter {
     display: flex;    
-    padding: 27px 73px 31px 73px;
+    padding: 26px 73px 7px 73px;
 }
 
 .filter-column {
-    width: 240px;
+    width: 255px;
     padding: 0;
     margin: 0;
 }
 
 .filter-column legend {
-    margin-bottom: 23px;
+    margin-bottom: 25px;
 }
 .filter ul {
     padding: 0;
@@ -607,7 +628,7 @@ button.search {
 .filter-option {
     color: #ffffff;
     list-style: none;
-    margin-bottom: 23px;
+    margin-bottom: 25px;
     padding-left: 40px;
 }
 
@@ -788,12 +809,13 @@ button.search {
 .results {
     display: flex;
     margin: 0;
-    padding: 30px 73px;
+    padding: 30px 66px 30px 73px;
     background-color: #fefefe;
     border-bottom: 1px solid #e5e5e5;
 }
 
 .find{
+    font-size: 21px;
     line-height: 26px;
     font-weight: 700;
     margin: 0;
@@ -805,7 +827,7 @@ button.search {
 .sorting {
     display: flex;
     margin: 0;
-    padding: 0;
+    padding: 6px 0 2px 0;
     align-items: center;
     
 
@@ -813,8 +835,11 @@ button.search {
 .results h4 {
     margin: 0;
     padding: 0;
+    font-size: 12px;
+    line-height: 18px;
     font-weight: 400;
     padding-right: 40px;
+
 
 }
 .sorting-list {  
@@ -918,7 +943,7 @@ button.search {
     display: flex;
     align-items: flex-end;
     padding-left: 73px;
-    padding-right: 73px;
+    padding-right: 69px;
     padding-bottom: 30px;
     padding-top: 25px;
     border-bottom: 1px solid #e5e5e5;
@@ -952,17 +977,17 @@ button.search {
 
 .buttons .blue-button {
     display: inline-block;
-    padding: 3px 19px 3px 17px;
+    padding: 3px 17px;
     margin-right: 2px;
 }
 .buttons .brown-button {
     display: inline-block;
-    padding: 3px 16px 3px 17px;
+    padding: 3px 17px;
 }
 
 .hotel-rating {
     margin-left: auto;
-    padding-top: 4px;    
+    /* padding-top: 2px;     */
 }
 
 .hotel-rating p {
@@ -973,9 +998,10 @@ button.search {
 }
 
 p.stars {
-    width: 90px;
+    width: 89px;
     height: 16px;
-    background-image: url("../img/stars.png");
+    background-image: url("../img/star.svg");
+    background-repeat: space;
     margin-bottom: 47px;
     margin-left: auto;
 }
@@ -1046,7 +1072,7 @@ p.rating {
     justify-content: center;
     align-items: center;
     width: 46px;
-    height: 46px;
+    height: 48px;
     margin: 36px 0;    
 }
 
