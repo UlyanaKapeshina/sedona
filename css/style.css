@@ -679,7 +679,7 @@ button.search {
     
     background-image: url("../img/checkbox-on.svg")
 }
-.filter-input-checkbox-disabled + label::before {
+.filter-input-checkbox:disabled + label::before {
     content: "";
     position: absolute;
   
@@ -690,7 +690,7 @@ button.search {
     background-image: url("../img/checkbox-off-blocked.svg");   
   }
 
-.filter-input-checkbox-disabled:checked + label::after{
+.filter-input-checkbox:disabled:checked + label::after{
     content: "";
     position: absolute;
   
