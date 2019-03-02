@@ -94,12 +94,12 @@ input[type="radio"].visually-hidden {
     display: flex;
     flex-wrap: wrap;
     margin: 0;
-    padding: 14px 73px 16px 73px;    
+    padding: 15px 72px 15px 72px;    
 }
 
 .site-navigation li {
-    width: 22.72%; 
-    padding-right: 10px;  
+    width: 240px; 
+    /* padding-right: 10px;   */
     
 }
 .site-navigation li:nth-child(4n+3) {
@@ -178,6 +178,7 @@ a.active {
     background-color: transparent;
     background-image: url("../img/polygon.svg");
     background-repeat: no-repeat;    
+    background-position: 0% 100%;
 }
 
 .features {
@@ -200,7 +201,7 @@ a.active {
 .features-head strong {
     font-size: 21px;
     margin: 0;   
-    margin-bottom: 27px;
+    margin-bottom: 28px;
     display: block;
 }
 
@@ -234,6 +235,7 @@ a.active {
     padding: 0;
     margin: 0;
     list-style: none;
+    padding-top: 133px;
 }
 
 .features-item {    
@@ -246,7 +248,7 @@ a.active {
     font-size: 21px;
     width: 151px;     
     margin: 0 auto;
-    margin-bottom: 23px;
+    margin-bottom: 24px;
 }
 
 .devils-bridge-feature,
@@ -284,16 +286,17 @@ p.image-feature {
 
 .features-of-city-item {
     width: 400px;
-    padding: 161px 45px 61px 45px; 
+    padding: 28px 45px 61px 45px; 
     position: relative;   
 }
 .features-of-city-item::before {
     content: "";
     position: absolute;
-    height: 76px;
-    width: 76px;
-    top: 58px;
-    left: 162px;   
+    height: 72px;
+    width: 75px;
+    bottom: 100%;
+    left: 200px; 
+    transform: translateX(-50%);  
     background-color: transparent;
     background-image: url("../img/icon-1.svg");
     background-repeat: no-repeat;    
@@ -302,10 +305,12 @@ p.image-feature {
 .food::before {
     background-image: url("../img/icon-3.svg");    
     width: 74px;
+    height: 70px;
 }
 .souvenirs::before {
     background-image: url("../img/icon-2.svg");
-    width: 64px;    
+    width: 64px;
+    height: 76px;    
 }
 
 .features-item-bridge {
@@ -581,19 +586,36 @@ button.search {
     padding: 0;
     margin: 0;
     position: relative;
+    
 }
 .map p {
     padding: 0;
     margin: 0;
+    position: absolute;
+    top: 0;
+    z-index: -1;
 }
 .map img {
     display: block;
     padding: 0;
     margin: 0;
+    
 }
+
+.modal-map p {
+    margin: 0;
+  }
+  
+.map iframe {
+    position: relative;
+    z-index: 2;
+  
+    border: none;
+  }
+
 .filter {
     display: flex;    
-    padding: 26px 73px 7px 73px;
+    padding: 27px 72px 7px 72px;
 }
 
 .filter-column {
@@ -617,6 +639,7 @@ button.search {
 .filters {
     background-image: url("../img/filter background.jpg");
     background-repeat: no-repeat;
+    background-position: 0 -120px;
 }
 
 .filter legend {
@@ -729,7 +752,7 @@ button.search {
   .price-controls .min-price,
   .price-controls .max-price   {
     width: 90px;
-    padding-left: 65px;
+    padding-left: 62px;
 }
 
 .price-controls input {
@@ -751,7 +774,7 @@ button.search {
 .range-controls {
     position: relative;
   
-    margin-bottom: 32px;
+    margin-bottom: 33px;
   }
 .range-controls .scale {
     height: 2px;
@@ -796,9 +819,9 @@ button.search {
 .price-column button.btn-transparent {
     width: 137px;
     margin-right: 96px;
-    margin-left: 85px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    margin-left: 86px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     border-radius: 2px;
     cursor: pointer;
     background-color: transparent;             
@@ -827,7 +850,8 @@ button.search {
 .sorting {
     display: flex;
     margin: 0;
-    padding: 6px 0 2px 0;
+    line-height: 18px;
+    padding: 5px 0 2px 0;
     align-items: center;
     
 
@@ -854,7 +878,7 @@ button.search {
     font-size: 12px;
     line-height: 18px;
     color: #cacaca;
-    padding-right: 33px;
+    padding-right: 30px;
 }
 .sorting-option a{
     color: #cacaca;
@@ -942,8 +966,8 @@ button.search {
 
     display: flex;
     align-items: flex-end;
-    padding-left: 73px;
-    padding-right: 69px;
+    padding-left: 72px;
+    padding-right: 72px;
     padding-bottom: 30px;
     padding-top: 25px;
     border-bottom: 1px solid #e5e5e5;
@@ -965,20 +989,20 @@ button.search {
     line-height: 26px;
     font-weight: 700;
     margin: 0;
-    margin-bottom: 6px;
+    margin-bottom: 7px;
 } 
 
 .hotel-info p {
     margin: 0;
     margin-bottom: 15px;
-    width: 116px;
+    width: 111px;
     display: inline-block;
 }
 
 .buttons .blue-button {
     display: inline-block;
     padding: 3px 17px;
-    margin-right: 2px;
+    margin-right: 1px;
 }
 .buttons .brown-button {
     display: inline-block;
@@ -999,10 +1023,10 @@ button.search {
 
 p.stars {
     width: 89px;
-    height: 16px;
+    height: 17px;
     background-image: url("../img/star.svg");
     background-repeat: space;
-    margin-bottom: 47px;
+    margin-bottom: 49px;
     margin-left: auto;
 }
 
@@ -1016,7 +1040,7 @@ p.villas-stars {
 
 
 p.rating {
-    padding: 2px 16px 3px 13px; 
+    padding: 2px 12px 3px 17px; 
     text-align: center;
     background-color: #f2f2f2;
 }
@@ -1064,7 +1088,7 @@ p.rating {
 
 .footer-copyright p {
     line-height: 26px;
-    margin: 0 8px;
+    margin: 0 8px 0 3px;
 }
 
 .social-button {
