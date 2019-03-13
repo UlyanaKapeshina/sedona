@@ -1142,9 +1142,7 @@ button.search {
 .icon-up {
   background-color: transparent;
   border: none;
-  cursor: pointer;
-  outline-color: transparent;
-  
+  cursor: pointer;   
 }
 
 .icon-down path,
@@ -1155,13 +1153,6 @@ button.search {
 .icon-down:hover path,
 .icon-up:hover path {
   fill: #231f20;
-}
-
-.icon-down:active,
-.icon-up:active,
-.icon-down:focus,
-.icon-up:focus {
-  
 }
 
 .icon-down:active path,
